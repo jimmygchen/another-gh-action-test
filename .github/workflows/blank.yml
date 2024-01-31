@@ -16,14 +16,14 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
-    run: 
-      echo hello
+    steps: 
+      - run: echo hello
     # job steps...
 
   job2:
     runs-on: ubuntu-latest
-    run:
-      exit 1
+    steps:
+      - run: exit 1
 
   jobOnFailure:
     runs-on: ubuntu-latest
